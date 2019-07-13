@@ -6,7 +6,7 @@ Previous version (unformated) ...
 ![OpenStack-topologia](https://user-images.githubusercontent.com/43869367/61165794-7056e400-a4fb-11e9-96f1-d55ede6db0bd.png)
 
 
-
+```
 ===========================================================================
 #Configurar arquivo de hosts em todos os computadores
 #/etc/hosts
@@ -362,6 +362,7 @@ https://docs.openstack.org/glance/rocky/configuration/index.html
 ##############################
 ### Compute Service - Nova ###
 ##############################
+```
 
-Continuar aqui....
+## Continua....
 
