@@ -52,7 +52,9 @@ service chrony restart
 #Teste a configuração
 chronyc sources
 ===========================================================================
-
+```
+## CONTROLLER NODE
+```
 ### CONTROLLER ##
 #Instalar OpenStack client
 add-apt-repository cloud-archive:rocky
@@ -293,7 +295,6 @@ apt install glance
 ###########################################################################
 [database]
 connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
-# ...
 
 [keystone_authtoken]
 www_authenticate_uri = http://controller:5000
@@ -305,11 +306,9 @@ user_domain_name = Default
 project_name = service
 username = glance
 password = GLANCE_PASS
-# ...
 
 [paste_deploy]
 flavor = keystone
-# ...
 
 [glance_store]
 stores = file,http
@@ -323,7 +322,6 @@ filesystem_store_datadir = /var/lib/glance/images/
 ###########################################################################
 [database]
 connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
-# ...
 
 [keystone_authtoken]
 www_authenticate_uri = http://controller:5000
@@ -335,7 +333,6 @@ user_domain_name = Default
 project_name = service
 username = glance
 password = GLANCE_PASS
-# ...
 
 [paste_deploy]
 flavor = keystone
