@@ -6,8 +6,8 @@ Previous version (unformated) ...
 ![OpenStack-topologia](https://user-images.githubusercontent.com/43869367/61165794-7056e400-a4fb-11e9-96f1-d55ede6db0bd.png)
 
 
+## CONTROLLER NODE and COMPUTE NODES
 ```
-
 #Configurar arquivo /etc/hosts
 #em hosts em todos os computadores
 ###########################################################################
@@ -21,7 +21,9 @@ Previous version (unformated) ...
 #Em todos os nos instale o servidor NTP
 apt install chrony
 ===========================================================================
-
+```
+## CONTROLLER NODE
+```
 ### CONTROLLER ###
 #Config NTP Server
 #no arquivo /etc/chrony.conf 
@@ -35,7 +37,9 @@ service chrony restart
 #Teste a configuração
 chronyc sources
 ===========================================================================
-
+```
+## COMPUTE NODES
+```
 ### COMPUTE NODES ###
 #Config NTP Client
 #comente todas as linhas do arquivo /etc/chrony.conf 
@@ -124,7 +128,9 @@ systemctl enable etcd
 systemctl start etcd
 ===========================================================================
 ===========================================================================
-
+```
+## OPENSTACK MODULES INSTALLATION
+```
 ############################################
 ### Instalação dos modulos do CONTROLLER ###
 ############################################
@@ -430,30 +436,24 @@ apt install nova-api nova-conductor nova-consoleauth nova-novncproxy nova-schedu
 #Configure o arquivo: /etc/nova/nova.conf
 ###########################################################################
 [api_database]
-# ...
 connection = mysql+pymysql://nova:NOVA_DBPASS@controller/nova_api
 
 [database]
-# ...
 connection = mysql+pymysql://nova:NOVA_DBPASS@controller/nova
 
 [placement_database]
-# ...
 connection = mysql+pymysql://placement:PLACEMENT_DBPASS@controller/placement
 
 [DEFAULT]
-# ...
 transport_url = rabbit://openstack:RABBIT_PASS@controller
 my_ip = 10.0.0.11
 use_neutron = true
 firewall_driver = nova.virt.firewall.NoopFirewallDriver
 
 [api]
-# ...
 auth_strategy = keystone
 
 [keystone_authtoken]
-# ...
 auth_url = http://controller:5000/v3
 memcached_servers = controller:11211
 auth_type = password
@@ -760,11 +760,12 @@ WSGIApplicationGroup %{GLOBAL}
 service apache2 reload
 ===========================================================================
 ===========================================================================
-
-
-#******************#
-#** COMPUTE NODE **#
-#******************#
+```
+## COMPUTE NODES
+```
+#*******************#
+#** COMPUTE NODEs **#
+#*******************#
 
 ######################
 ###  NOVA SERVICES ###
