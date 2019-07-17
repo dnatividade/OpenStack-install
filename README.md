@@ -161,11 +161,9 @@ apt install keystone apache2 libapache2-mod-wsgi
 #Edite o arquivo: /etc/keystone/keystone.conf
 ###########################################################################
 [database]
-# ...
 connection = mysql+pymysql://keystone:KEYSTONE_DBPASS@controller/keystone
-#...
+
 [token]
-# ...
 provider = fernet
 ###########################################################################
 
