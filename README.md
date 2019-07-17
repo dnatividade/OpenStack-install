@@ -503,20 +503,6 @@ service nova-conductor restart
 service nova-novncproxy restart
 ===========================================================================
 
-#*********************#
-#** CONTROLLER NODE **#
-#*********************#
-
-#Adicionar compute node
-#(como usuario comum)
-. admin-openrc
-openstack compute service list --service nova-compute
-
-## DISCOVER COMPUTE HOSTS ## **********************************************
-#(como root)
-su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
-===========================================================================
-
 ###############
 ### Neutron ###
 ###############
@@ -896,15 +882,31 @@ service nova-compute restart
 service neutron-linuxbridge-agent restart
 ===========================================================================
 ===========================================================================
-
-
-
-
-===========================================================================
-https://docs.openstack.org/install-guide/openstack-services.html
-===========================================================================
-
 ```
+## CONTROLLER NODE
+### Force search and add new nodes
+```
+#*********************#
+#** CONTROLLER NODE **#
+#*********************#
+
+#Add compute node
+#(como usuario comum)
+. admin-openrc
+openstack compute service list --service nova-compute
+
+## DISCOVER COMPUTE HOSTS ## **********************************************
+#(como root)
+su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
+===========================================================================
+```
+
+
+===========================================================================
+[https://docs.openstack.org/install-guide/openstack-services.html]
+===========================================================================
+
+
 
 ## Continua....
 
