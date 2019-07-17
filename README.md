@@ -103,7 +103,7 @@ apt install memcached python-memcache
 #Alterar o arquivo /etc/memcached.conf
 #(comente a linha abaixo)
 ###########################################################################
-#-l 10.0.0.11
+#-l 127.0.0.1
 ###########################################################################
 
 #Reinicie o serviço
