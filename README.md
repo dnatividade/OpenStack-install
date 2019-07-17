@@ -676,6 +676,7 @@ service_metadata_proxy = true
 metadata_proxy_shared_secret = METADATA_SECRET
 
 [scheduler]
+#search and add new nodes every x seconds
 discover_hosts_in_cells_interval = 300
 ###########################################################################
 ===========================================================================
