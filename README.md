@@ -1,4 +1,4 @@
-# OpenStack-install
+# [logo]: (http://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/openstack-vert.jpg) OpenStack-install
 Step-by-step OpenStack configuration
 
 Previous version (unformated) ...
