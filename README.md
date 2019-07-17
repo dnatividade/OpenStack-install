@@ -18,7 +18,7 @@ Previous version (unformated) ...
 10.0.0.61	compute4
 ###########################################################################
 
-#Em todos os nos instale o servidor NTP
+#Em todos os nos instale o serviço de NTP
 apt install chrony
 ===========================================================================
 ```
