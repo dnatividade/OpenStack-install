@@ -4,7 +4,7 @@ Step-by-step OpenStack configuration
 
 Previous version (unformated) ...
 
-![OpenStack-topologia](https://user-images.githubusercontent.com/43869367/61165794-7056e400-a4fb-11e9-96f1-d55ede6db0bd.png)
+![OpenStack-topologia](https://user-images.githubusercontent.com/43869367/61339408-0c426180-a814-11e9-8709-6f3ea98cacd8.png)
 
 
 ## CONTROLLER NODE and COMPUTE NODES
