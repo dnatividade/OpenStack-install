@@ -902,9 +902,7 @@ su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
 ```
 
 
-###### ===========================================================================
-##### SOURCE [https://docs.openstack.org/install-guide/openstack-services.html]
-###### ===========================================================================
+##### SOURCE: https://docs.openstack.org/install-guide/openstack-services.html
 
 
 
