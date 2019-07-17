@@ -903,7 +903,7 @@ su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
 
 
 ##### ===========================================================================
-##### OpenStack[https://docs.openstack.org/install-guide/openstack-services.html]
+##### [logo]: http://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/openstack-vert.jpg [https://docs.openstack.org/install-guide/openstack-services.html]
 ##### ===========================================================================
 
 
