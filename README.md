@@ -201,8 +201,7 @@ export OS_IMAGE_API_VERSION=2
 
 #Ativar as variáveis de ambiente do arquivo criado:
 . admin-openrc
-#ou
-source admin-openrc
+#(o mesmo que: source admin-openrc)
 ===========================================================================
 
 ## Criar dominio, project, users e roles ## (ainda como usuário comum)
