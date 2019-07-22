@@ -7,9 +7,10 @@
 - Click in [+ Create Network]
 
 - Choose a "Network Name", as: private;
-- Check:  [v] Enable Admin State
-          [ ]  Shared
-          [v] Create Subnet
+- Check:
+-- [v] Enable Admin State
+-- [ ]  Shared
+-- [v] Create Subnet
 - Click in [Next]
 
 - Choose a "Subnet Name", as: sub_private;
