@@ -3,17 +3,17 @@
 ## CONTROLLER NODE
 
 ##### For this configuration, I used Horizon Web interface:
-- User "admin" -> Project -> Network
-- Click in [+ Create Network]
+-- User "admin" -> Project -> Network
+-- Click in [+ Create Network]
 
-- Choose a "Network Name", as: private;
-- Check:  [v] Enable Admin State
+-- Choose a "Network Name", as: private;
+-- Check:  [v] Enable Admin State
           [ ]  Shared
           [v] Create Subnet
-- Click in [Next]
+-- Click in [Next]
 
-- Choose a "Subnet Name", as: sub_private;
-- Put a "Network Address", as: 10.20.0.0/24
+-- Choose a "Subnet Name", as: sub_private;
+-- Put a "Network Address", as: 10.20.0.0/24
 - IP Version: IPv4
 - Gateway IP: [blanck]
 - Click in [Next]
