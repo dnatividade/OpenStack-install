@@ -1,4 +1,5 @@
 # Create Port Forwarding or DNAT
+##### OpenStack use Floating IP to do this
 
 ## CONTROLLER NODE
 
