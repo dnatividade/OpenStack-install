@@ -8,9 +8,9 @@
 
 - Choose a "Network Name", as: private;
 - Check:
-- - [v] Enable Admin State
+- - [x] Enable Admin State
 - - [ ]  Shared
-- - [v] Create Subnet
+- - [x] Create Subnet
 - Click in [Next]
 
 - Choose a "Subnet Name", as: sub_private;
@@ -19,7 +19,8 @@
 - Gateway IP: [blanck]
 - Click in [Next]
 
-- Check:  [v] Enable DHCP
+- Check:
+- - [x] Enable DHCP
 - "Allocation Pools": 10.20.0.100,10.20.0.200
 - "DNS Name Servers": 8.8.4.4
 - Click in [Create]
