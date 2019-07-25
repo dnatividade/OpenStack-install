@@ -17,5 +17,9 @@
 - **Orchestration (Heat)**: arquestração de ambiente
 
 
+- **DbasS (Trove)**: database as a service
+- **Bare Metal Deploy (Ironic)**: phisical servers deploy
+- **Share File System (Manila)**: file share
+- **Key management (Barbican)**: database as a service
 
 
