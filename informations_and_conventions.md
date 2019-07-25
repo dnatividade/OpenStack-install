@@ -1,10 +1,11 @@
 ### OpenStack = infraestrutura virtualizada
 
-### Grupos de componentes:
+### Component groups:
 - **Control**: API,web, BD, serviço de mensagens
 - **Network**: serviços de rede, agentes e plugins
 - **Compute**: VM, gerência, hypervisor
 
+### Services
 
 - **Dashboard (Horizon)**: interface web
 - **Idetify (Keystone)**: serviços de identidade (usuários)
@@ -16,10 +17,8 @@
 - **Metering (Ceilometer)**: monitor, alertas, bilhetagem
 - **Orchestration (Heat)**: arquestração de ambiente
 
-
 - **DbasS (Trove)**: database as a service
 - **Bare Metal Deploy (Ironic)**: phisical servers deploy
 - **Share File System (Manila)**: file share
 - **Key management (Barbican)**: database as a service
-
 
